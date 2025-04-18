@@ -7,6 +7,8 @@ public class HashMapDemo {
         employee.put(108, "Rock Lee");
         System.out.println("Employee with id 108: "+employee.get(108));
         employee.remove(108);
-        System.out.println("All the other ID's: "+employee);
+        for(var entry: employee.entrySet()){
+        System.out.println("ID: "+entry.getKey()+ ", Name: "+ entry.getValue());
+        }
     }   
 }
