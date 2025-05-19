@@ -22,11 +22,11 @@ class Buffer_Interclass{
     }
 }
 
-// try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person.dat"))){
-//     Person person = new Person ("Alice ", 34);
-//     oos.writeObject(person);
-//     System.out.println("Object Oriented Succesfully.");
-// }
-//     catch(Exception e){
-//         System.out.println("Exception");
-// }
+try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person.dat"))){
+    Person person = new Person ("Alice ", 34);
+    oos.writeObject(person);
+    System.out.println("Object Oriented Succesfully.");
+}
+    catch(Exception e){
+        System.out.println("Exception");
+}
